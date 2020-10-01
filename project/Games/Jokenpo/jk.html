@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+
+    <link rel="stylesheet" href="/assets/css/navtopBar.css">
+    <link rel="stylesheet" href="/assets/css/aboutIcon.css">
+    <link rel="stylesheet" href="jk.css">
+</head>
+
+<body>
+    <nav class="topBar">
+        <div class="logo">
+            <a href="/index.html">
+                <h4>Dev Thiago</h4>
+            </a>
+
+        </div>
+        <ul class="topBar-links ">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/subLinks/project.html">Projetos</a></li>
+            <li><a href="/subLinks/aboutMe.html">Sobre</a></li>
+            <li><a href="/subLinks/contact.html">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <div id="aboutIcon">
+        <button id="aboutIconBtn" class="aboutIcon-Btn">
+            <img class="aboutIconImg" src="/assets/img/imgIcon/about.svg" alt="Como Foi Feita Esta Pagina">
+        </button>
+    </div>
+
+    <div id="descriptionAbout" class="aboutIconDesc">
+        <div class="aboutIconDesc-content">
+            <span class="close">&times;</span>
+            <p>
+                Frontend Mentor | Rock, paper, Scissors
+                <br>
+                Botao Regras mais tarde. Vou da up pra ve oq rola.
+                Colocar um settime pra da um tempo de resposta pra nao parecer tao automatico assim.
+                <br>
+                <a href="https://github.com/RpThiagoluiz/PagePrincipal" target="_blank">Code GitHub</a>
+            </p>
+        </div>
+    </div>
+
+
+    <section class="gameJokenpo">
+        <main>
+            <header>
+                <h2>
+                    <span>Pedra</span>
+                    <span>Papel</span>
+                    <span>Tesoura</span>
+                </h2>
+
+                <div class="score-container">
+                    <h4>Seus Pontos</h4>
+                    <p id="user-score">0</p>
+                    <h4>Ponto Pc</h4>
+                    <p id="pc-score">0</p>
+                </div>
+
+            </header>
+
+            <div class="result">
+                <p>Faça sua escolhe, caso tenha alguma duvida click em COMO JOGAR! Aproveite</p>
+            </div>
+
+            <div class="jokenpo-icons">
+                <img class="btn-circle btn-rock" id="r" src="/assets/img/imgJokenpo/rock.svg"
+                        alt="Icone Pedra">
+                <img class="btn-circle btn-paper" id="p" src="/assets/img//imgJokenpo/paper.svg"
+                        alt="Icone Papel">
+                <img class="btn-circle btn-sci" id="s" src="/assets/img/imgJokenpo/scissors.svg"
+                        alt="Icone Tesoura">
+            </div>
+
+
+            
+
+
+        </main>
+    </section>
+
+
+
+    <button class="btn-rules">Como Jogar</button>
+    <button class="btn-refresh" onClick="window.location.reload();">Recomeçar</button>
+
+
+    <script src="score.js"></script>
+    <script src="/Js/aboutIt.js"></script>
+</body>
+
+</html>

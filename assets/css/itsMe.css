@@ -1,0 +1,5 @@
+.container-icons img:nth-child(1)::before,
+.container-icons img:nth-child(1)::after {
+    width:100%;
+    z-index: 1;
+}

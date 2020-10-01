@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
+
+/* Box texto */
+.boxTitle {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-gap: 2em;
+    height: 78vh;
+    margin: 1em;
+
+}
+
+.container-grid a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-grid-title {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+
+
+.container-grid-main {
+    background-image: url(../img/imgProject/poster-2690541.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 1em 5em 1em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.container-grid-sec {
+    border-radius: 1em 2em 1em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.container-grid-sec:nth-child(2) {
+    background: url(../img/imgProject/rock-paper-scissors-156171.svg) center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.container-grid-sec:nth-child(3) {
+    background: url(../img/imgProject/camp-4363073.svg) center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.container-grid-sec:nth-child(4) {
+    background: url(../img/imgProject/robot-in-space-4556429.svg);
+    background-position: center;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.container-grid-spotlight {
+    grid-column: 1 / 4;
+    grid-row: 3 /3;
+}
+
+.container-grid-spotlight-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+
+.container-grid-spotlight-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background: #3f3d3dc2;
+    border-left: 5px solid transparent;
+    padding: 2rem;
+    width: 50%;
+    color: inherit;
+}
+
+.container-grid-spotlight-item a {
+    color: #000;
+}
+
+/*Populares Copy*/
+
+.populares {
+    padding: 3rem 2rem;
+}
+
+.populares__conteudo {
+    display: flex;
+    flex-wrap: warp;
+    grid-area: conteudo;
+    background: red;
+}
+
+.populares__card {
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas:
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+    /* Tamanho do card da imagem.*/
+    /* widht foi o tamanho total menos a margem.*/
+    margin-right: 1rem;
+    width: calc(20% - 1rem);
+}
+
+/*Pegar o ultimo card e retirar a margin right dele*/
+
+.populares__card:last-child {
+    margin-right: 0;
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    grid-area: card-corpo;
+    padding: 0.75rem;
+    display: grid;
+    grid-row-gap: .55rem;
+    grid-template-areas:
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto;
+    padding: 0.75rem;
+}
+
+.populares__card___titulo {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data {
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card___descricao {
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo {
+    font-weight: bold;
+}
+
+.populares__icone {
+    margin-right: .25rem;
+    ;
+}
+
+.populares__cabecalho {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.populares__botao {
+    background: transparent;
+    border: none;
+
+}
+
+@media (max-width:600px){
+    .container-grid{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .container-grid-main {
+        width:50vw;
+        height: 50vh;
+    }
+    .container-grid-sec {
+        width:100px;
+        height:100px;
+    }
+    .container-grid-title {
+        background: rgba(0, 0, 0, 0.062);
+        color: rgb(75, 13, 175);
+        padding: .6rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1em;
+    
+    }
+    
+}
