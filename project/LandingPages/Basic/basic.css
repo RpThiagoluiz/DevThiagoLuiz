@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+   font-family: 'Syne Mono', monospace;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100vw;
+   height: 100vh;
+}
+
+.navBar {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 10vh;
+   background:rgb(109, 106, 106);
+   color: #fff;
+
+}
+
+.navBar-links {
+   display: flex;
+   justify-content: space-between;
+   width:60%;
+}
+.navBar-links li {
+   list-style: none;
+}
+.navBar-links a {
+   color: #fff;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.navBar-links a:hover {
+   border-bottom: 1px solid #fff;
+}
+
+
+.containerCards {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding:10vh;
+}
+
+.containerCards .card {
+   display: flex;
+   flex-wrap: wrap;
+   border: 1px solid rgb(197, 21, 21);
+   border-radius: 5px;
+   margin:1em;
+}
+
+.containerCards .card:hover{
+   box-shadow: 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+footer {
+   position:fixed;
+   left:0;
+   bottom:0;
+   width:100%;
+
+   text-align: center;
+   padding:2vh;
+   color: #fff;
+   background:rgb(109, 106, 106);
+}
